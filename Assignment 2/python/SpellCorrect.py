@@ -106,45 +106,45 @@ def main():
     devPath = '../data/holbrook-tagged-dev.dat'
     devCorpus = HolbrookCorpus(devPath)
 
-    print "===================================================================="
+    # print "===================================================================="
 
-    print 'Uniform Language Model: '
-    uniformLM = UniformLanguageModel(trainingCorpus)
-    uniformSpell = SpellCorrect(uniformLM, trainingCorpus)
-    uniformOutcome = uniformSpell.evaluate(devCorpus)
-    print str(uniformOutcome)
+    # print 'Uniform Language Model: '
+    # uniformLM = UniformLanguageModel(trainingCorpus)
+    # uniformSpell = SpellCorrect(uniformLM, trainingCorpus)
+    # uniformOutcome = uniformSpell.evaluate(devCorpus)
+    # print str(uniformOutcome)
 
-    print "===================================================================="
+    # print "===================================================================="
 
-    print 'Unigram Language Model: '
-    unigramLM = UnigramLanguageModel(trainingCorpus)
-    unigramSpell = SpellCorrect(unigramLM, trainingCorpus)
-    unigramOutcome = unigramSpell.evaluate(devCorpus)
-    print str(unigramOutcome)
+    # print 'Unigram Language Model: '
+    # unigramLM = UnigramLanguageModel(trainingCorpus)
+    # unigramSpell = SpellCorrect(unigramLM, trainingCorpus)
+    # unigramOutcome = unigramSpell.evaluate(devCorpus)
+    # print str(unigramOutcome)
 
-    print "===================================================================="
+    # print "===================================================================="
 
-    print 'Laplace Unigram Language Model: '
-    laplaceUnigramLM = LaplaceUnigramLanguageModel(trainingCorpus)
-    laplaceUnigramSpell = SpellCorrect(laplaceUnigramLM, trainingCorpus)
-    laplaceUnigramOutcome = laplaceUnigramSpell.evaluate(devCorpus)
-    print str(laplaceUnigramOutcome)
+    # print 'Laplace Unigram Language Model: '
+    # laplaceUnigramLM = LaplaceUnigramLanguageModel(trainingCorpus)
+    # laplaceUnigramSpell = SpellCorrect(laplaceUnigramLM, trainingCorpus)
+    # laplaceUnigramOutcome = laplaceUnigramSpell.evaluate(devCorpus)
+    # print str(laplaceUnigramOutcome)
 
-    print "===================================================================="
+    # print "===================================================================="
 
-    print 'Laplace Bigram Language Model: '
-    laplaceBigramLM = LaplaceBigramLanguageModel(trainingCorpus)
-    laplaceBigramSpell = SpellCorrect(laplaceBigramLM, trainingCorpus)
-    laplaceBigramOutcome = laplaceBigramSpell.evaluate(devCorpus)
-    print str(laplaceBigramOutcome)
+    # print 'Laplace Bigram Language Model: '
+    # laplaceBigramLM = LaplaceBigramLanguageModel(trainingCorpus)
+    # laplaceBigramSpell = SpellCorrect(laplaceBigramLM, trainingCorpus)
+    # laplaceBigramOutcome = laplaceBigramSpell.evaluate(devCorpus)
+    # print str(laplaceBigramOutcome)
 
-    print "===================================================================="
+    # print "===================================================================="
 
-    print 'Stupid Backoff Language Model: '
-    sbLM = StupidBackoffLanguageModel(trainingCorpus)
-    sbSpell = SpellCorrect(sbLM, trainingCorpus)
-    sbOutcome = sbSpell.evaluate(devCorpus)
-    print str(sbOutcome)
+    # print 'Stupid Backoff Language Model: '
+    # sbLM = StupidBackoffLanguageModel(trainingCorpus)
+    # sbSpell = SpellCorrect(sbLM, trainingCorpus)
+    # sbOutcome = sbSpell.evaluate(devCorpus)
+    # print str(sbOutcome)
 
     print "===================================================================="
 
